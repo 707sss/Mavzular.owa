@@ -1,1 +1,68 @@
+<?php
+$talabalar = ["ali", "vali", "gili"];
+echo $talabalar[0];                                //ali
 
+
+$mahsulotlar =[
+    "olma" => 1500,
+   "anor"=> 2000,
+];
+echo $mahsulotlar["olma"];                         //1500
+
+
+$sinfhona = [["Jon", 10, "A"],
+["Sara", 11, "B"]
+];
+echo $sinfhona[0][0];                              //jon
+
+
+$fruits = ["apple", "danana", "cherry"];          // $count = 3
+$connt =    ($fruits);                           
+ echo $connt[0][0];
+
+$fruits = ["apple", "banana"];
+array_push ($fruits, "orange", "grape");
+
+
+$fruits = ["apple", "banana", "cherry"];
+$lastFruit = array_pop($fruits);
+echo implode(",", $fruits);
+echo $lastFruit;
+
+
+
+$queue = ["A","B","C"];
+$firist = array_shift($queue);
+echo implode(",", $queue);
+echo "<br>" . $first;
+
+
+
+$list = ["B", "C"];
+array_udiff($list, "A", "D");
+echo implode(",", $list);
+                                         
+
+$color = ["red","green","blue"];              //in_arry  //1-turu 2-fols
+$sinfhona = in_array("green", $color);
+$sinfhona = true;
+
+
+$arre1 = ["a","b"];                         //arre1
+$arr2 = ["c","d"];
+$merged = array_merge($arr1, $arr2);
+echo implode(",", $merged);
+
+
+$usere =["Ali", "Vali", "Guli"];                //array_search()
+$key = array_search("Guli", $users);
+echo $key;
+
+
+
+$numbers = [1,2,3,4];                           //array_reverse   
+$reversed = array_reverse($numbers);
+echo implode(",", $reversed);
+
+
+?>
